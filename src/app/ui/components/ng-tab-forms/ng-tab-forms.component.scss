@@ -1,0 +1,16 @@
+.lee-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100vh;
+}
+
+.json-editor{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dynamic-form{
+    grid-column: 2/-1;
+    grid-row: 1;
+}
+

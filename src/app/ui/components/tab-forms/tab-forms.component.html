@@ -1,0 +1,9 @@
+<div class="tabContainer" [formGroup]="tabForm">
+    <ng-container *ngFor="let content of tabForm['controls'].contents['controls']">
+
+        <div *ngIf="content.controls.type.value == CONTENT_TYPE.FIELD_NAME_VALUE_TABLE">
+            <field-name-value-table [content]="content"></field-name-value-table>
+        </div>
+        
+    </ng-container>
+</div>

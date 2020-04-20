@@ -1,0 +1,12 @@
+<div class="lee-container">
+    <div class="json-editor">
+        <json-editor [options]="editorOptions" [data]="jsonEditorData" (change)="getData($event)"></json-editor>
+    </div>
+    <div class="dynamic-form">
+        <mat-tab-group [formGroup]="form">
+            <mat-tab *ngFor="let tab of form['controls'].tabs['controls']" [label]="tab.controls.tabName.value">
+                <tab-forms [tab]="tab"></tab-forms>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
