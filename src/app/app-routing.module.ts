@@ -7,7 +7,8 @@ import { TabFormsComponent } from './ui/components/tab-forms/tab-forms.component
 const routes: Routes = [
   {path: 'tabs', component: NgTabFormsComponent},
   {path:'tabForm', component: TabFormsComponent},
-  {path: '', pathMatch: 'full', redirectTo:'tabs'}
+  {path:'dynamic-form-validations', pathMatch: 'full', redirectTo:'/tabs'},
+  {path: '', pathMatch: 'full', redirectTo:'/tabs'}
 ];
 
 @NgModule({
